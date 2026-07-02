@@ -1,25 +1,61 @@
 {
-  "name": "HugoBlox Codespace",
-  "image": "ghcr.io/HugoBlox/hugo-blox-dev:hugo0.162.0",
-  "updateContentCommand": "pnpm install --frozen-lockfile --prefer-offline",
-  "postCreateCommand": "pnpm --version && hugo version",
+  "name": "Hugo & pnpm",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+  // "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+
+  // 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Configure tool-specific properties.
   "customizations": {
+    // Configure properties specific to VS Code.
     "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "html.format.templating": true
+      },
+      // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "ownable.ownable"
+        // https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter
+        "eliostruyf.vscode-front-matter",
+        // https://marketplace.visualstudio.com/items?itemName=rusnasonov.vscode-hugo
+        "rusnasonov.vscode-hugo",
+        // https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode
+        "budparr.language-hugo-vscode",
+        // https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-hugo-themer
+        "eliostruyf.vscode-hugo-themer",
+        // https://marketplace.visualstudio.com/items?itemName=kaellarkin.hugo-shortcode-syntax
+        "kaellarkin.hugo-shortcode-syntax",
+
+        // "csstools.postcss",
+
+        // "esbenp.prettier-vscode",
+        // "tamasfe.even-better-toml",
+        // "naumovs.color-highlight",
+        // "GitHub.vscode-pull-request-github",
+        // "eamodio.gitlens",
+        "davidanson.vscode-markdownlint",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   },
-  "mounts": [
-    "source=pnpm-store,target=/home/vscode/.local/share/pnpm,type=volume"
-  ],
+
   "remoteUser": "vscode",
-  "forwardPorts": [
-    1313
-  ],
-  "portsAttributes": {
-    "1313": {
-      "label": "Hugo Server"
-    }
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+"features": {
+	"ghcr.io/devcontainers/features/common-utils:2": {},
+	"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+	"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {},
+  "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+  "ghcr.io/devcontainers/features/go:1": {
+    "version": "latest"
   }
+}
 }
