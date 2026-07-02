@@ -15,7 +15,7 @@ postnominals:
 #   icon: "☕️"
 role: PhD Student
 bio: |
-  My name is Leonardo Kimura, and I am a PhD student at the University of São Paulo, Brazil. Currently, I am visiting Aarhus University, Denmark, hosted by Diego Aranha.
+  My name is Leonardo Kimura, and I am a PhD student at the University of São Paulo, supervised by Marcos Simplicio. Currently, I am visiting Aarhus University, Denmark, hosted by Diego Aranha.
 
   My research focuses on cryptographic applications with the potential to make a real-world impact. In particular, I work on electronic voting systems, with interests in transparency, usability, Internet voting, and the design of new voting applications.
 
@@ -46,8 +46,12 @@ interests:
   - Secure protocols
 
 education:
+  - degree: Visiting PhD student
+    institution: Aarhus University
+    start: 2026-apr
+    end: present
   - degree: PhD Computer Science
-    institution: University of Sao Paulo & Aarhus University
+    institution: University of Sao Paulo
     start: 2023-oct
     end: present
     # summary: |
