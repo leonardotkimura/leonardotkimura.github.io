@@ -18,8 +18,9 @@ sections:
         - Felipe Kenzo Shiraishi, Vitor Hugo Perles, Hector Kobayashi Yassuda (2021)
 
         #### Undergraduate Research
+        - Arthur Milani Giovanini (2026)
+        - Dimitri Daniel Allan Leskow (2026)
         - Carolina Borzino Rocha (2025)
-        - Dimitri Daniel Allan Leskow (2025)
         - Luiz Carlos de Azevedo Santana (2025)
         - Gabriel Kusumota Nadalin (2024)
         - Claudio Lucio Cunha da Silva (2024)
