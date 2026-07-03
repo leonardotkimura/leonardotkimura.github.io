@@ -12,7 +12,7 @@
   {{/* APA Style */}}
   {{ if eq (site.Params.hugoblox.content.mycitations.style | default "apa") "apa" }}
 
-  <a href="{{ $item.RelPermalink }}" class="text-2xl text-red-600" >{{ $item.Title }}</a>.
+  <a href="{{ $item.RelPermalink }}" class="block text-2xl underline text-red-600" >{{ $item.Title }}</a>
   <span class="article-metadata li-cite-author">
     {{ partial "page_metadata_authors" $item }}
   </span>

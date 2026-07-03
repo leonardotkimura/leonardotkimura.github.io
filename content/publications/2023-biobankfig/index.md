@@ -16,10 +16,10 @@ authors:
   - Marcos A Simplicio Junior
 
 
-date: '2024-06-01T00:00:00Z'
+date: '2023-06-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-01T00:00:00Z'
+publishDate: '2023-06-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
