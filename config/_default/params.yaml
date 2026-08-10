@@ -198,7 +198,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
     google:
-      measurement_id: "" # Google Analytics 4: G-XXXXXXXXXX
+      measurement_id: "G-3HPW3P527W" # Google Analytics 4: G-XXXXXXXXXX
     google_tag_manager:
       container_id: "" # GTM-XXXXXXX
     plausible:
@@ -217,7 +217,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "FsCfAYzkTWxzwAieClFAjgDLV0A79Mx5EXRU4rB7Q9g"
     bing: ""
     baidu: ""
     yandex: ""
