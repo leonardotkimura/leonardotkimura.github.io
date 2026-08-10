@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "The personal site from Leonardo Kimura"
+    description: "The official website of Leonardo Kimura, featuring research papers, academic publications, and ongoing projects in Computer Security and Cryptography"
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "" # Twitter/X handle for Twitter Cards (without @)
@@ -127,7 +127,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Leonardo Kimura | PhD Student"
     # For local_business identity type only
     location:
       address:
